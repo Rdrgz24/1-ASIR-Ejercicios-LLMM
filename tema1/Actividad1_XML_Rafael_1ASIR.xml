@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+  <libro>
+  <nombre>Don Quijote de la Mancha</nombre>
+  <descripcion>Don Quijote de la Mancha es una novela escrita por el español Miguel de Cervantes Saavedra. Publicada su primera parte con el título de El ingenioso hidalgo don Quijote de la Mancha a comienzos de 1605, es la obra más destacada de la literatura española y una de las principales de la literatura universal. En 1615 apareció su continuación con el título de Segunda parte del ingenioso caballero don Quijote de la Mancha. El Quijote de 1605 se publicó dividido en cuatro partes; pero al aparecer el Quijote de 1615 en calidad de Segunda parte de la obra, quedó revocada de hecho la partición en cuatro secciones del volumen publicado diez años antes por Cervantes.</descripcion>
+  </libro>
+
+  <libro>
+  <nombre>Historia de dos ciudades (novela)</nombre>
+  <descripcion>Historia de dos ciudades (título original, A Tale of Two Cities) es una novela del escritor británico Charles Dickens. En esta novela histórica se narra la vida en el siglo XVIII, en la época de la Revolución francesa. La historia se desarrolla en dos países: Inglaterra y Francia, y en las ciudades de Londres y París en la época de los albores de la Revolución francesa. La primera ciudad simbolizaría de algún modo la paz y la tranquilidad, la vida sencilla y ordenada; mientras la segunda representaría la agitación, el desafío y el caos, el conflicto entre dos mundos en una época en la que se anuncian drásticos cambios sociales.</descripcion>
+  </libro>
+
+  <libro>
+  <nombre>El Señor de los Anillos</nombre>
+  <descripcion>El Señor de los Anillos (título original en inglés: The Lord of the Rings) es una novela de fantasía épica escrita por el filólogo y escritor británico J. R. R. Tolkien. Su historia se desarrolla en la Tercera Edad del Sol de la Tierra Media, un lugar ficticio poblado por hombres y otras razas antropomorfas, como los hobbits, los elfos o los enanos, así como por muchas otras criaturas reales y fantásticas. La novela narra el viaje del protagonista principal, Frodo Bolsón, hobbit de la Comarca, para destruir el Anillo Único y la consiguiente guerra que provocará el enemigo para recuperarlo, ya que es la principal fuente de poder de su creador, el señor oscuro Sauron.</descripcion>
+  </libro>
+</biblioteca>
