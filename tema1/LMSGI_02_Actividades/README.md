@@ -18,3 +18,4 @@ Ejercicio | Descripción
 [Ejercicio 12](/tema1/LMSGI_02_Actividades/Ejercicio12_Actividad2.html) | Crear párrafos HTML, añadir una cabecera a cada uno e insertarles varias etiquetas con estilos.
 [Ejercicio 13](/tema1/LMSGI_02_Actividades/Ejercicio13_Actividad2.html) | Añadir bordes con varios estilos a cada cabecera y párrafo.
 [Ejercicio 14](/tema1/LMSGI_02_Actividades/Ejercicio14_Actividad2.html) | Añadir valores de margin y paddin a los parrafos anteriores y añadir un borde a cada cabecera.
+[Ejercicio 15](/tema1/LMSGI_02_Actividades/Ejercicio15_Actividad2.html) | Crear una tabla simulando una factura de un pedido en HTML.
