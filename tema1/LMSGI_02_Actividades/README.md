@@ -9,5 +9,5 @@ Ejercicio | Descripción
 [Ejercicio 3](/tema1/LMSGI_02_Actividades/Ejercicio3_Actividad2.html) | Usar el texto mostrado y darle formatos h1, h2 y etiqueta strong para los datos.
 [Ejercicio 4](/tema1/LMSGI_02_Actividades/Ejercicio4_Actividad2.html) | Crea una página html que muestre un aspecto similar a la de la actividad.
 [Ejercicio 5](/tema1/LMGSI_02_Actividades/Ejercicio5_Actividad2.html) | Crea una página que contenga varios párrafos, con distinta alineación y con encabezados.
-[Ejercicio 5](/tema1/LMGSI_02_Actividades/Ejercicio6_Actividad2.html) | Modificar la página anterior (Ejercicio 5) para incluir distintos formatos de texto.
-[Ejercicio 5](/tema1/LMGSI_02_Actividades/Ejercicio7_Actividad2.html) | Cambiar los atributos de la página anterior (Ejercicio 6) para cambiar el fondo y color.
+[Ejercicio 6](/tema1/LMGSI_02_Actividades/Ejercicio6_Actividad2.html) | Modificar la página anterior (Ejercicio 5) para incluir distintos formatos de texto.
+[Ejercicio 7](/tema1/LMGSI_02_Actividades/Ejercicio7_Actividad2.html) | Cambiar los atributos de la página anterior (Ejercicio 6) para cambiar el fondo y color.
