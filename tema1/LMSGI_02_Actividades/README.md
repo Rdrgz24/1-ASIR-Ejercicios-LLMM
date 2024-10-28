@@ -11,3 +11,6 @@ Ejercicio | Descripción
 [Ejercicio 5](/tema1/LMSGI_02_Actividades/Ejercicio5_Actividad2.html) | Crea una página que contenga varios párrafos, con distinta alineación y con encabezados.
 [Ejercicio 6](/tema1/LMSGI_02_Actividades/Ejercicio6_Actividad2.html) | Modificar la página anterior (Ejercicio 5) para incluir distintos formatos de texto.
 [Ejercicio 7](/tema1/LMSGI_02_Actividades/Ejercicio7_Actividad2.html) | Cambiar los atributos de la página anterior (Ejercicio 6) para cambiar el fondo y color.
+[Ejercicio 8](/tema1/LMSGI_02_Actividades/Ejercicio8_Actividad2.rar) | Hacer el ejercicio número 6 de “uniwebsidad” del capítulo 4:
+https://uniwebsidad.com/libros/xhtml/capitulo-4/enlaces-basicos
+[Ejercicio 9](/tema1/LMSGI_02_Actividades/Ejercicio9_Actividad2.rar) | Crear un página html con una barra de menús con enlaces a cada apartado de la web, incluyendo un logotipo y un "mailto" en el pie de página.
