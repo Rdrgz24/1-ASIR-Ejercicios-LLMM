@@ -19,3 +19,4 @@ Ejercicio | Descripción
 [Ejercicio 13](/tema1/LMSGI_02_Actividades/Ejercicio13_Actividad2.html) | Añadir bordes con varios estilos a cada cabecera y párrafo.
 [Ejercicio 14](/tema1/LMSGI_02_Actividades/Ejercicio14_Actividad2.html) | Añadir valores de margin y paddin a los parrafos anteriores y añadir un borde a cada cabecera.
 [Ejercicio 15](/tema1/LMSGI_02_Actividades/Ejercicio15_Actividad2.html) | Crear una tabla simulando una factura de un pedido en HTML.
+[Ejercicio 16](/tema1/LMSGI_02_Actividades/Ejercicio16_Actividad2.html) | Crear una tabla con el horario actual del curso 1ºASIR.
