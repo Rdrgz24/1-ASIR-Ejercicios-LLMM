@@ -20,3 +20,7 @@ Ejercicio | Descripción
 [Ejercicio 14](/tema1/LMSGI_02_Actividades/Ejercicio14_Actividad2.html) | Añadir valores de margin y paddin a los parrafos anteriores y añadir un borde a cada cabecera.
 [Ejercicio 15](/tema1/LMSGI_02_Actividades/Ejercicio15_Actividad2.html) | Crear una tabla simulando una factura de un pedido en HTML.
 [Ejercicio 16](/tema1/LMSGI_02_Actividades/Ejercicio16_Actividad2.html) | Crear una tabla con el horario actual del curso 1ºASIR.
+[Ejercicio 17](/tema1/LMSGI_02_Actividades/Ejercicio17_Actividad2) | Crear una tabla con imágenes, enlaces y el precio de los productos.
+[Ejercicio 18](/tema1/LMSGI_02_Actividades/Ejercicio18_Actividad2) | Crear una tabla con imágenes conjuntas en las celdas, distintos formatos de texto y fusión de columnas o filas.
+[Ejercicio 19](/tema1/LMSGI_02_Actividades/Ejercicio19_Actividad2) | Insertar una imagen con estilo flotante de varias maneras.
+[Ejercicio 20](/tema1/LMSGI_02_Actividades/Ejercicio20_Actividad2) | Insertar tres imágenes distintas con un estilo flotante cada una separadas con líneas entre sí.
