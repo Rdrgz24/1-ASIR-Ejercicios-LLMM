@@ -11,8 +11,8 @@ Ejercicio | Descripción
 [Ejercicio 5](/tema1/LMSGI_02_Actividades/Ejercicio5_Actividad2.html) | Crea una página que contenga varios párrafos, con distinta alineación y con encabezados.
 [Ejercicio 6](/tema1/LMSGI_02_Actividades/Ejercicio6_Actividad2.html) | Modificar la página anterior (Ejercicio 5) para incluir distintos formatos de texto.
 [Ejercicio 7](/tema1/LMSGI_02_Actividades/Ejercicio7_Actividad2.html) | Cambiar los atributos de la página anterior (Ejercicio 6) para cambiar el fondo y color.
-[Ejercicio 8](/tema1/LMSGI_02_Actividades/Ejercicio8_Actividad2) | Hacer el ejercicio número 6 de “uniwebsidad” del capítulo 4. (Archivo RAR)
-[Ejercicio 9](/tema1/LMSGI_02_Actividades/Ejercicio9_Actividad2.rar) | Crear un página html con una barra de menús con enlaces a cada apartado de la web, incluyendo un logotipo y un "mailto" en el pie de página (Archivo RAR)
+[Ejercicio 8](/tema1/LMSGI_02_Actividades/Ejercicio8_Actividad2) | Hacer el ejercicio número 6 de “uniwebsidad” del capítulo 4.
+[Ejercicio 9](/tema1/LMSGI_02_Actividades/Ejercicio9_Actividad2.rar) | Crear un página html con una barra de menús con enlaces a cada apartado de la web, incluyendo un logotipo y un "mailto" en el pie de página
 [Ejercicio 10](/tema1/LMSGI_02_Actividades/Ejercicio10_Actividad2.html) | Escribir una página de HTML con dos niveles de listas anidadas
 [Ejercicio 11](/tema1/LMSGI_02_Actividades/Ejercicio11_Actividad2.html) | Añadir a la página anterior varias listas anidadas más que no tengas estilos de lista en algunas.
 [Ejercicio 12](/tema1/LMSGI_02_Actividades/Ejercicio12_Actividad2.html) | Crear párrafos HTML, añadir una cabecera a cada uno e insertarles varias etiquetas con estilos.
