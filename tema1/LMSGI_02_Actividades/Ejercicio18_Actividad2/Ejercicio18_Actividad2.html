@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18 Tabla con imagenes</title>
+    <style>
+        table, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comparativa de reproductores MP3</h1>
+    <table style="width: 40%;">
+        <caption>Tabla comparativa de las características técnicas de los reproductores MP3</caption>
+        <tr>
+            <th></th>
+            <th colspan="3"><img src="mp3_pequeno_blanco.png" alt="mp3pblanco"><img src="mp3_pequeno_negro.png" alt="mp3pnegro"><p><strong>MP3 mini</strong></p></th>
+            <th colspan="2"><img src="mp3_grande_blanco.png" alt="mp3gblanco"><img src="mp3_grande_negro.png" alt=""><p><strong>MP3 grande</strong></p></th>
+        </tr>
+        <tr>
+            <td><strong>Capacidad de almacenamiento</strong></td>
+            <td>4GB (1.000 canciones)</td>
+            <td>8GB (2.000 canciones)</td>
+            <td>16GB (4.000 canciones)</td>
+            <td>30GB (7.500 canciones)</td>
+            <td>80GB (20.000 canciones)</td>
+        </tr>
+        <tr>
+            <td><strong>Colores</strong></td>
+            <td><img src="color_blanco.png" alt="blanco"></td>
+            <td><img src="color_negro.png" alt="negro"><img src="color_verde.png" alt="verde"><img src="color_azul.png" alt="azul"><br><img src="color_rosa.png" alt="rosa"></td>
+            <td><img src="color_negro.png" alt=""></td>
+            <td colspan="2"><img src="color_blanco.png" alt="blanco"><img src="color_negro.png" alt="negro"></td>
+        </tr>
+        <tr>
+            <td><strong>Pantalla</strong></td>
+            <td colspan="3">LCD de 3cm (diagonal) con retroiluminación</td>
+            <td colspan="2">LCD de 6cm (diagonal) con retroiluminación</td>
+        </tr>
+        <tr>
+            <td rowspan="2"><strong>Tiempo de carga</strong></td>
+            <td colspan="3" rowspan="2">Unas 3 horas</td>
+            <td colspan="2">Unas 4 horas</td>
+        </tr>
+        <tr>
+            <td colspan="2">Unas 2 horas para alcanzar el 80% de la capacidad</td>
+        </tr>
+    </table>
+</body>
+</html>
