@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_Actividad24</title>
+    <style>
+        input {
+            border-radius: 1px;
+        }
+        input.surname {
+            width: 400px;
+        }
+        input.dni {
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Rellena tu CV</h2><br>
+    <form action="#action_page.php">
+            
+            <label for="name">Nombre</label><br>
+            <input type="text" id="name" maxlength="30" required><br>
+        
+            <label for="surname">Apellido</label><br>
+            <input type="text" id="surname" class="surname" maxlength="80" required><br>
+        
+            <label for="pwd">Contraseña</label><br>
+            <input type="text" id="pwd" maxlength="10" required><br>
+        
+            <label for="DNI">DNI</label><br>
+            <input type="text" id="DNI" class="dni" max="9"><br><br>
+        
+            <label>Sexo:</label><br>
+            <input type="radio" id="Man" name="sex" value="Hombre">
+            <label for="Man">Hombre</label><br>
+            <input type="radio" id="Woman" name="sex" value="Mujer">
+            <label for="Woman">Mujer</label><br><br>
+            
+            <label for="foto">Incluir mi foto</label>
+            <input type="file" id="foto" name="foto"><br><br>
+
+            <input type="checkbox" name="boletin" id="boletin" checked>
+            <label for="boletin">Suscribirme al boletin de novedades</label><br><br>
+
+            <button type="submit">Guardar cambios</button>
+            <button type="reset">Borrar datos introducidos</button>
+    </form>
+
+</body>
+</html>

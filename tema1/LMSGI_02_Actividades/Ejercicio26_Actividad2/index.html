@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Video sin botones, reproducción continua.</h2>
+    <video width="350" height="350" autoplay muted>
+        <source src="video_playa.mp4" type="video/mp4">
+    </video>
+    <h2>Video con botones, distintas posibilidades.</h2>
+    <div style="text-align: center;">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video width="350" height="350" id="video_buttons">
+            <source src="video_playa.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+
+    <script>
+        var myVideo = document.getElementById("video_buttons")
+        function playPause() {
+            if (myVideo.paused)
+            myVideo.play();
+        else myVideo.pause();
+        }
+        function makeBig() {
+            myVideo.width = 700;
+        }
+        function makeSmall() {
+            myVideo.width = 200;
+        }
+        function makeNormal() {
+            myVideo.width = 350;
+        }
+    </script>
+    <p>Video courtesy of <a href="https://es.wikipedia.org/wiki/Playa">Playa</a></p>
+</body>
+</html>
