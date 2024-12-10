@@ -24,11 +24,11 @@ Ejercicio | Descripción
 [Ejercicio 18](/tema1/LMSGI_02_Actividades/Ejercicio18_Actividad2) | Crear una tabla con imágenes conjuntas en las celdas, distintos formatos de texto y fusión de columnas o filas.
 [Ejercicio 19](/tema1/LMSGI_02_Actividades/Ejercicio19_Actividad2) | Insertar una imagen con estilo flotante de varias maneras.
 [Ejercicio 20](/tema1/LMSGI_02_Actividades/Ejercicio20_Actividad2) | Insertar tres imágenes distintas con un estilo flotante cada una separadas con líneas entre sí.
-[Ejercicio 21](/tema1/LMSGI_02_Actividades/Ejercicio21_Actividad2) | ---
-[Ejercicio 22](/tema1/LMSGI_02_Actividades/Ejercicio22_Actividad2) | ---
-[Ejercicio 23](/tema1/LMSGI_02_Actividades/Ejercicio23_Actividad2) | ---
-[Ejercicio 24](/tema1/LMSGI_02_Actividades/Ejercicio24_Actividad2.html) | ---
-[Ejercicio 25](/tema1/LMSGI_02_Actividades/Ejercicio25_Actividad2(php)) | ---
-[Ejercicio 26](/tema1/LMSGI_02_Actividades/Ejercicio26_Actividad2) | ---
-[Ejercicio 27](/tema1/LMSGI_02_Actividades/Ejercicio27_Actividad2) | ---
-[Ejercicio 28](/tema1/LMSGI_02_Actividades/Ejercicio28_Actividad2) | ---
+[Ejercicio 21](/tema1/LMSGI_02_Actividades/Ejercicio21_Actividad2) | Crear un grupo de imágenes en miniatura y enlazarlas a la imagen original.
+[Ejercicio 22](/tema1/LMSGI_02_Actividades/Ejercicio22_Actividad2) | Crear un favicon e incluirlo en un website.
+[Ejercicio 23](/tema1/LMSGI_02_Actividades/Ejercicio23_Actividad2) | Crear un iframe que incluya una barra de menús dentro.
+[Ejercicio 24](/tema1/LMSGI_02_Actividades/Ejercicio24_Actividad2.html) | Crear un formulario con una serie de condiciones en la contraseña, nombre y apellido.
+[Ejercicio 25](/tema1/LMSGI_02_Actividades/Ejercicio25_Actividad2(php)) | Crear un formulario con más campos y añadir un archivo php que "recoja" los datos.
+[Ejercicio 26](/tema1/LMSGI_02_Actividades/Ejercicio26_Actividad2) | Crear una página web que muestre un vídeo y sus respectivos botones de pausa.
+[Ejercicio 27](/tema1/LMSGI_02_Actividades/Ejercicio27_Actividad2) | Crear una página con un fichero de sonido.
+[Ejercicio 28](/tema1/LMSGI_02_Actividades/Ejercicio28_Actividad2) | Crear una página que muestre un vídeo de Youtube.
