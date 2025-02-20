@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 96%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.title {
+    font-family: Georgia, serif;
+    color: blue;
+    background-color: lightgray;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.6em;
+    word-spacing: 2em;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    color: darkred;
+    font-size: 18px;
+    letter-spacing: 1.4em;
+    margin-top: 20px;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+strong {
+    font-weight: bold;
+}
