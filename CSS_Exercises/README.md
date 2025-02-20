@@ -1,5 +1,5 @@
 # Ejercicios de CSS
-Repositorio donde están las actividades de LLMM del documento de google llamado "LMSGI_02_Actividades"
+Repositorio donde están las actividades de LLMM del documento de google llamado "Ejercicios CSS"
 
 ## ACTIVIDADES
 Ejercicio | Descripción
