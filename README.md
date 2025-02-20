@@ -12,4 +12,4 @@ Ejercicio | Descripción
 ## Ejercicios de CSS
 Ejercicio | Descripción
 ----------|------------
-["CSS Class Exercises"](/CSS_Exercises) | Actividades del documento de google llamado "Actividades CSS"
+["CSS Class Exercises"](/CSS_Exercises/README.md) | Actividades del documento de google llamado "Actividades CSS"
