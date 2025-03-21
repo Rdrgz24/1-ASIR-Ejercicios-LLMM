@@ -13,3 +13,8 @@ Ejercicio | Descripción
 Ejercicio | Descripción
 ----------|------------
 ["CSS Class Exercises"](/CSS_Exercises/README.md) | Actividades del documento de google llamado "Actividades CSS"
+
+## Ejercicios de JavaScript
+Ejercicio | Descripción
+----------|------------
+["JavaScript Class Exercises"](/CSS_Exercises/README.md) | Actividades del documento de google llamado "Actividades CSS"
