@@ -17,4 +17,4 @@ Ejercicio | Descripción
 ## Ejercicios de JavaScript
 Ejercicio | Descripción
 ----------|------------
-["JavaScript Class Exercises"](/CSS_Exercises/README.md) | Actividades del documento de google llamado "Actividades CSS"
+["JavaScript Class Exercises"](/JavaScript_exercises/README.md) | Actividades de JavaScript.
