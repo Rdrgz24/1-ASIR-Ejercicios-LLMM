@@ -17,4 +17,4 @@ Ejercicio | Descripción
 ## Ejercicios de JavaScript
 Ejercicio | Descripción
 ----------|------------
-["JavaScript Class Exercises"](/JavaScript_exercises/README.md) | Actividades de JavaScript.
+[JavaScript Class Exercises](/JavaScript_exercises/README.md) | Actividades de JavaScript.
