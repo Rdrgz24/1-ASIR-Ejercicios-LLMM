@@ -4,4 +4,5 @@ Repositorio donde están las actividades de LLMM relacionadas con Java Script.
 ## ACTIVIDADES
 Ejercicio | Descripción
 ----------|------------
-[Ejercicio 1](/CSS_Exercises/Ejercicio_1) | Create a HTML document from the scratch with your CV. Create a CSS style sheet called MyStyle.CSS with the followings requirements.
+[Ejercicio 1](/JavaScript_exercises/Exercise_1) | Crear un documento html que modifique y elimine un mismo párrafo.
+[Ejercicio 2](/JavaScript_exercises/Exercise_2) | Crear un documento html que inserte un nuevo párrafo.
