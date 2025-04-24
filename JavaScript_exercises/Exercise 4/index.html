@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<br>
+<form id="formulario">
+  Inserta aquí el texto<input type="text" name="fname"><br>
+  Inserta aquí el número<input type="text" name="lname"><br><br>
+</form> 
+
+<p>Cuando pulses sobre "Mostrar", aparecerán los datos insertados en los párrafos de debajo</p>
+
+<button onclick="ondisplay()">Mostrar</button>
+
+<p id="ondisplaytext"></p>
+
+<script>
+function ondisplay() {
+  var uno = document.getElementById("formulario");
+  var text = "";
+  var i;
+  for (i = 0; i < uno.length ;i++) {
+    text += uno.elements[i].value + "<br>";
+  }
+  document.getElementById("ondisplaytext").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

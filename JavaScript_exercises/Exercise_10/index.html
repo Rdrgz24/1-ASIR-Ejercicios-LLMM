@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 10</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 10px;
+    }
+    h3 {
+      margin-top: 10px;
+    }
+    input, button {
+      margin: 5px 4px;
+    }
+    p {
+      margin: 3px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejercicio 10 - Funciones variadas con JavaScript</h1>
+
+  <h3>A. Máximo entre dos números</h3>
+    <input type="number" id="a1">
+    <input type="number" id="a2">
+    <button onclick="maximo()">Comprobar</button>
+    <p id="resA"></p>
+
+  <h3>B. Máximo entre tres números</h3>
+    <input type="number" id="b1">
+    <input type="number" id="b2">
+    <input type="number" id="b3">
+    <button onclick="maximoTres()">Calcular</button>
+    <p id="resB"></p>
+
+  <h3>C. ¿Es una vocal?</h3>
+    <input type="text" id="caracter" maxlength="1">
+    <button onclick="esVocal()">Verificar</button>
+    <p id="resC"></p>
+
+  <h3>D. Traducir a Rövarspråket</h3>
+    <input type="text" id="textoRovar">
+    <button onclick="traducirRovarspraket()">Traducir</button>
+    <p id="resD"></p>
+
+  <h3>E. Sumar y multiplicar un array</h3>
+    <input type="text" id="numeros" placeholder="Ej: 1,2,3,4">
+    <button onclick="sumar()">Sumar</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <p id="resE1"></p>
+    <p id="resE2"></p>
+
+  <h3>F. Invertir una cadena</h3>
+    <input type="text" id="cadenaInvertir">
+    <button onclick="invertirCadena()">Invertir</button>
+    <p id="resF"></p>
+
+  <h3>G. Ordenar palabras alfabéticamente</h3>
+    <input type="text" id="palabrasOrdenar" placeholder="Ej: sol,luna,agua">
+    <button onclick="ordenarPalabras()">Ordenar</button>
+    <p id="resG"></p>
+
+  <h3>H. Longitud de la palabra más larga</h3>
+    <input type="text" id="palabrasLargas" placeholder="Ej: gato,televisor,luz">
+    <button onclick="longitudMax()">Calcular</button>
+    <p id="resH"></p>
+
+  <h3>I. Filtrar palabras más largas que un número</h3>
+    <input type="text" id="palabrasFiltrar" placeholder="Ej: casa,elefante,sol">
+    <input type="number" id="longitudMinima">
+    <button onclick="filtrarPalabras()">Filtrar</button>
+    <p id="resI"></p>
+
+  <h3>J. Frecuencia de caracteres</h3>
+    <input type="text" id="textoFrecuencia">
+    <button onclick="frecuenciaCaracteres()">Calcular</button>
+    <p id="resJ"></p>
+
+  <script>
+    function maximo() {
+      let a = parseFloat(document.getElementById("a1").value)
+      let b = parseFloat(document.getElementById("a2").value)
+      let mayor = (a > b) ? a : b
+      document.getElementById("resA").innerText = "El número más grande es: " + mayor
+    }
+    function maximoTres() {
+      let x = parseFloat(document.getElementById("b1").value)
+      let y = parseFloat(document.getElementById("b2").value)
+      let z = parseFloat(document.getElementById("b3").value)
+      let mayor = Math.max(x, y, z)
+      document.getElementById("resB").innerText = "El número más grande de los tres es: " + mayor
+    }
+    function esVocal() {
+      let c = document.getElementById("caracter").value.toLowerCase()
+      let es = "aeiouáéíóú".includes(c)
+      document.getElementById("resC").innerText = es ? c + " -> si es una vocal" : c + " -> no es una vocal"
+    }
+    function traducirRovarspraket() {
+      let texto = document.getElementById("textoRovar").value
+      let traducido = ""
+      for (let letra of texto) {
+        if (letra.match(/[bcdfghjklmnñpqrstvwxyz]/i)) {
+          traducido += letra + "o" + letra
+        } else {
+          traducido += letra
+        }
+      }
+      document.getElementById("resD").innerText = traducido
+    }
+    function sumar() {
+      let numeros = document.getElementById("numeros").value.split(',').map(Number)
+      let suma = numeros.reduce((a, b) => a + b, 0)
+      document.getElementById("resE1").innerText = "El resultado de la suma es: " + suma
+    }
+    function multiplicar() {
+      let numeros = document.getElementById("numeros").value.split(',').map(Number)
+      let producto = numeros.reduce((a, b) => a * b, 1)
+      document.getElementById("resE2").innerText = "El resultado de la multiplicación es: " + producto
+    }
+    function invertirCadena() {
+      let texto = document.getElementById("cadenaInvertir").value
+      let invertido = texto.split("").reverse().join("")
+      document.getElementById("resF").innerText = invertido
+    }
+    function ordenarPalabras() {
+      let palabras = document.getElementById("palabrasOrdenar").value.split(',').map(p => p.trim())
+      palabras.sort()
+      document.getElementById("resG").innerText = palabras.join(", ")
+    }
+    function longitudMax() {
+      let palabras = document.getElementById("palabrasLargas").value.split(',')
+      let max = 0
+      for (let palabra of palabras) {
+        if (palabra.length > max) max = palabra.length
+      }
+      document.getElementById("resH").innerText = "Longitud de la palabra más larga " + max
+    }
+    function filtrarPalabras() {
+      let palabras = document.getElementById("palabrasFiltrar").value.split(',')
+      let i = parseInt(document.getElementById("longitudMinima").value)
+      let resultado = palabras.filter(p => p.length > i)
+      document.getElementById("resI").innerText = resultado.join(", ")
+    }
+    function frecuenciaCaracteres() {
+      let texto = document.getElementById("textoFrecuencia").value
+      let resultado = {}
+      for (let letra of texto) {
+        resultado[letra] = (resultado[letra] || 0) + 1
+      }
+      document.getElementById("resJ").innerText = JSON.stringify(resultado)
+    }
+  </script>
+</body>
+</html>

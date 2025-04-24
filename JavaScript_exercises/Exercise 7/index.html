@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider de Imágenes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .contenedor-slider {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 50px auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .slider {
+            display: flex;
+            width: 400%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .imagen {
+            width: 25%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .boton-prev, .boton-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .boton-prev {
+            left: 10px;
+        }
+
+        .boton-next {
+            right: 10px;
+        }
+
+        .boton-prev:hover, .boton-next:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+<h2 style="text-align: center; font-family: 'Times New Roman', Times, serif">SLIDER DE IMAGENES</h2>
+    <div class="contenedor-slider">
+        <div class="slider">
+            <img src="coche1.jpg" class="imagen" alt="Coche 1">
+            <img src="coche2.jpg" class="imagen" alt="Coche 2">
+            <img src="coche3.jpg" class="imagen" alt="Coche 3">
+            <img src="coche4.jpg" class="imagen" alt="Coche 4">
+        </div>
+        <button class="boton-prev" onclick="moverSlider(-1)">&#10094;</button>
+        <button class="boton-next" onclick="moverSlider(1)">&#10095;</button>
+    </div>
+
+    <script>
+        let indice = 0;
+
+        function moverSlider(direccion) {
+            const slider = document.querySelector('.slider');
+            const totalImagenes = document.querySelectorAll('.imagen').length;
+            indice += direccion;
+            if (indice < 0) {
+                indice = totalImagenes - 1;
+            } else if (indice >= totalImagenes) {
+                indice = 0;
+            }
+            slider.style.transform = `translateX(-${indice * 25}%)`;
+        }
+    </script>
+</body>
+</html>

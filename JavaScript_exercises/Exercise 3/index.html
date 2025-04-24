@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Onchange</title>
+  <style id="style1">
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .gallery {
+      width: 45%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    img {
+      max-width: 300px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 5px;
+      margin-top: 10px;
+      border: 2px solid #ccc;
+    }
+    select {
+      margin-top: 10px;
+      padding: 5px;
+    }
+    .style-switcher {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .style-switcher button {
+      margin: 5px;
+      padding: 8px 16px;
+    }
+  </style>
+
+  <style id="style2">
+    body {
+      background: #1e1e1e;
+      color: #f0f0f0;
+    }
+    img {
+      max-width: 300px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 5px;
+      margin-top: 10px;
+      border: 2px solid #555;
+    }
+    select {
+      background: #333;
+      color: white;
+      border: 1px solid #666;
+    }
+    .style-switcher button {
+      background: #444;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">Galería</h2>
+  <p style="text-align: center;">Ejemplo de JavaScript en el que cambiamos las imágenes mostradas el pulsar un botón</p>
+  <div class="container">
+    <div class="gallery">
+      <h3>Coches</h3>
+      <select id="carSelect" onchange="changeImage('car')">
+        <option value="coche1.jpg">Coche 1</option>
+        <option value="coche2.jpg">Coche 2</option>
+        <option value="coche3.jpg">Coche 3</option>
+        <option value="coche4.jpg">Coche 4</option>
+        <option value="coche5.jpg">Coche 5</option>
+        <option value="coche6.jpg">Coche 6</option>
+      </select>
+      <br>
+      <img id="carImage" src="coche1.jpg" alt="Coche">
+    </div>
+    <div class="gallery">
+      <h3>Spiderman</h3>
+      <select id="spidermanSelect" onchange="changeImage('spiderman')">
+        <option value="spiderman1.gif">Spiderman 1</option>
+        <option value="spiderman2.jpg">Spiderman 2</option>
+        <option value="spiderman3.jpg">Spiderman 3</option>
+        <option value="spiderman4.jpg">Spiderman 4</option>
+        <option value="spiderman5.jpg">Spiderman 5</option>
+      </select>
+      <br>
+      <img id="spidermanImage" src="spiderman1.gif" alt="Spiderman">
+    </div>
+  </div>
+  <div class="style-switcher">
+    <button onclick="switchStyle('style1')">Modo Claro</button>
+    <button onclick="switchStyle('style2')">Modo Oscuro</button>
+  </div>
+<script>
+    window.onload = function() {
+      switchStyle('style2'); 
+    };
+    // Cambiar imagen
+    function changeImage(type) {
+      if (type === 'car') {
+        const select = document.getElementById('carSelect');
+        document.getElementById('carImage').src = select.value;
+      } else {
+        const select = document.getElementById('spidermanSelect');
+        document.getElementById('spidermanImage').src = select.value;
+      }
+    }
+    // Cambiar entre estilos
+    function switchStyle(styleId) {
+      document.getElementById('style1').disabled = (styleId !== 'style1');
+      document.getElementById('style2').disabled = (styleId !== 'style2');
+    }
+</script>
+</body>
+</html>
