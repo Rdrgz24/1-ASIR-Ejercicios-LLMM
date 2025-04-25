@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 5</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .grupo-botones {
+      margin-bottom: 20px;
+    }
+
+    button {
+      margin-right: 10px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    #parrafo {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    #imagen {
+      width: 200px;
+      height: auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    #mensaje {
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      width: fit-content;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>a. Cambiar el estilo de un párrafo</h2>
+  <p>Presiona cualquiera de los estilos y se cambiará el estilo del párrafo de abajo:</p>
+  <div class="grupo-botones">
+    <button onclick="cambiarFuente('Arial')">Arial</button>
+    <button onclick="cambiarFuente('Courier New')">Courier New</button>
+    <button onclick="cambiarFuente('Georgia')">Georgia</button>
+  </div>
+  <p id="parrafo">Esto es un párrafo de ejemplo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat atque vero obcaecati cum praesentium veritatis commodi minima, assumenda ipsa voluptatibus, recusandae magni impedit voluptas ullam consequatur tenetur inventore non nisi.</p>
+
+  <h2>Cambiar la imagen</h2>
+  <div class="grupo-botones">
+    <button onclick="cambiarImagen('img1.jpg')">Imagen 1</button>
+    <button onclick="cambiarImagen('img2.jpg')">Imagen 2</button>
+    <button onclick="cambiarImagen('img3.jpg')">Imagen 3</button>
+  </div>
+  <img id="imagen" src="" alt="Pulsa en alguna de los recuadros para que aparezca una imagen">
+
+  <h2>Mostrar mensajes</h2>
+  <div class="grupo-botones">
+    <button onclick="mostrarMensaje('Hola, este es el primer mensaje que aparece por pantalla.')">Mensaje 1</button>
+    <button onclick="mostrarMensaje('Este es el segundo mensaje que aparece por pantalla')">Mensaje 2</button>
+    <button onclick="mostrarMensaje('Y por último, este es el tercer mensaje.')">Mensaje 3</button>
+  </div>
+  <div id="mensaje">Haz clic en uno de los botones para ver un mensaje.</div>
+
+  <script>
+    function cambiarFuente(fuente) {
+      document.getElementById('parrafo').style.fontFamily = fuente;
+    }
+
+    function cambiarImagen(src) {
+      document.getElementById('imagen').src = src;
+    }
+
+    function mostrarMensaje(mensaje) {
+      document.getElementById('mensaje').innerText = mensaje;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 3 - DOM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    #mensaje {
+      margin-top: 15px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Eliminar elementos de la siguiente lista:</h2>
+
+  <ul id="miLista">
+    <li>Primer texto de la lista</li>
+    <li>Segundo texto de la lista</li>
+    <li>Tercer texto de la lista</li>
+    <li>Cuarto texto de la lista</li>
+  </ul>
+
+  <button onclick="eliminarElemento()">Eliminar último párrafo o texto.</button>
+
+  <div id="mensaje"></div>
+
+  <script>
+    function eliminarElemento() {
+      const lista = document.getElementById("miLista");
+
+      if (lista.hasChildNodes()) {
+        const ultimoElemento = lista.lastElementChild;
+        lista.removeChild(ultimoElemento);
+        document.getElementById("mensaje").innerText = "";
+      } else {
+        document.getElementById("mensaje").innerText = "No hay más elementos para eliminar.";
+      }
+    }
+  </script>
+
+</body>
+</html>

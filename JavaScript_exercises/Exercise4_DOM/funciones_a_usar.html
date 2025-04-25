@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4 - DOM</title>
+</head>
+<body>
+    <script>
+// Para mostrar el título de la página web, usamos dentro de las opciones de desarrollador la siguiente función:
+console.log("El título de la página es: ", document.title);
+
+// Para mostrar todas las imágenes de la página web, usamos dentro de las opciones de desarrollador la siguiente función:
+const imagenes = document.images;
+console.log("Imágenes que se han encontrado:");
+for (let i = 0; i < imagenes.length; i++) {
+  console.log(`Imagen ${i + 1}: ${imagenes[i].src}`);
+}
+
+// Para mostrar todas las enlaces de la página web, usamos dentro de las opciones de desarrollador la siguiente función:
+const enlaces = document.links;
+console.log("Enlaces encontrados:");
+for (let i = 0; i < enlaces.length; i++) {
+  console.log(`Enlace ${i + 1}: ${enlaces[i].href}`);
+}
+    </script>
+</body>
+</html>

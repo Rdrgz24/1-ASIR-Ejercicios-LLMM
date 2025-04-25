@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2 - DOM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    #contenedor {
+      margin-top: 20px;
+      padding: 10px;
+      border: 2px dashed #999;
+      width: fit-content;
+    }
+
+    button {
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+    img {
+      margin-top: 10px;
+      width: 200px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Agregar imagen a un div/h2>
+    <p style="font-size: 15px; font-family: Arial, Helvetica, sans-serif;">Pulsa sobre el botón de abajo pra agregar una imagn usando JavaScript.</p>
+  <button onclick="agregarImagen()">Agregar una imagen</button>
+  <p style="font-size: 15px; font-family: Arial, Helvetica, sans-serif;">Si pulsas más veces, se añaderán tantas imágenes como pulses.</p>
+
+  <div id="contenedor"></div>
+
+  <script>
+    function agregarImagen() {
+      const nuevaImagen = document.createElement("img");
+      nuevaImagen.src = "img1.jpg";
+      nuevaImagen.alt = "Imagen";
+      const contenedor = document.getElementById("contenedor");
+      contenedor.appendChild(nuevaImagen);
+    }
+  </script>
+
+</body>
+</html>
