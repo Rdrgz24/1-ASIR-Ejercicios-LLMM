@@ -4,4 +4,4 @@ Repositorio donde están las actividades de LLMM del documento de google llamado
 ## ACTIVIDADES
 ### 1. Simple questions:
 #### a. How should an element with the name test element and the content "This is our first element!" look?
-~~~<test_element>This is our first element!</test_element>~~~
+<test_element>This is our first element!</test_element>
