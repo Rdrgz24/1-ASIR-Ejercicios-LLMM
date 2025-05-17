@@ -1,4 +1,4 @@
-# Ejercicios de XML, XML+DOM, Ajax+ y Json
+![image](https://github.com/user-attachments/assets/097bd5af-1529-4985-9c52-b20f3e0fe5c0)# Ejercicios de XML, XML+DOM, Ajax+ y Json
 Repositorio donde están las actividades de LLMM del documento de google llamado "XML+XML-DOM+Ajax+Json+RSS_exercises"
 
 ## Soluciones de XML (teóricas)
@@ -113,4 +113,10 @@ Solución propuesta para ejercicio Ex5b.xml
 No. Un atributo no puede repetirse dentro del mismo elemento.
 #### c. Where is it stated that the element names in opening and closing tags must match?
 En la sección 3.1 del estándar XML, se establece que los nombres de las etiquetas de apertura y cierre deben coincidir exactamente (incluyendo mayúsculas y minúsculas).
+
+## Soluciones de XML DOM
+### 1. Escribe el código necesario para obtener los siguientes datos:
+Soluciones propuestas en las captura indicando los datos a obtener. (Ejercicios del 1 al 12)
+![image](https://github.com/user-attachments/assets/185585fc-0e1a-4c19-800a-70f78a13b6e8)
+![image](https://github.com/user-attachments/assets/473bce5c-bbf8-4bda-8c21-b74736a215f2)
 
