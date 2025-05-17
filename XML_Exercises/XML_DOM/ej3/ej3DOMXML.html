@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio XML - Libros</title>
+    <style>
+        body {
+            margin-left: 20px;
+        }
+        table, th, td {
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicio XML - Libros</h1>
+    <p>Se muestran todas las soluciones con funciones que cargan un DOM de XML.</p>
+
+    <div id="resultado">
+    </div>
+
+<script>
+    function cargarXML() {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "libros.xml", true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                const xmlTexto = xhr.responseText;
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xmlTexto, "text/xml");
+                procesarXML(xmlDoc);
+            }
+        };
+        xhr.send();
+    }
+
+    function procesarXML(xmlDoc) {
+        const libros = xmlDoc.getElementsByTagName("book");
+        let resultadoHTML = "";
+        
+        const tituloPrimerLibro = libros[0].getElementsByTagName("title")[0].textContent;
+        resultadoHTML += `<p><strong>1. Título del primer libro:</strong> ${tituloPrimerLibro}</p>`;
+
+        resultadoHTML += "<p><strong>2. Todos los títulos de libros:</strong></p>";
+        for (let i = 0; i < libros.length; i++) {
+            const titulo = libros[i].getElementsByTagName("title")[0].textContent;
+            resultadoHTML += ` | ${titulo} | `;
+        }
+
+        const atributosCuartoLibro = libros[3].attributes;
+        resultadoHTML += `<p><strong>3. Número de atributos del cuarto libro:</strong> ${atributosCuartoLibro.length}</p>`;
+
+        resultadoHTML += "<p><strong>4. Valores de los atributos del cuarto libro:</strong></p><ul>";
+        for (let i = 0; i < atributosCuartoLibro.length; i++) {
+            const atributo = atributosCuartoLibro[i];
+            resultadoHTML += `<li>${atributo.name}: ${atributo.value}</li>`;
+        }
+        resultadoHTML += "</ul>";
+
+        const autoresTercerLibro = libros[2].getElementsByTagName("author");
+        resultadoHTML += `<p><strong>5. Número de autores del tercer libro:</strong> ${autoresTercerLibro.length}</p>`;
+
+        resultadoHTML += "<p><strong>6. Autores del tercer libro:</strong></p><ul>";
+        for (let i = 0; i < autoresTercerLibro.length; i++) {
+            resultadoHTML += `<li>${autoresTercerLibro[i].textContent}</li>`;
+        }
+        resultadoHTML += "</ul>";
+
+        resultadoHTML += "<p><strong>7. Tabla de Título, Primer Autor del libro, Precio y Año:</strong></p>";
+        resultadoHTML += `<table>
+                        <tr><th>Título</th><th>1er Autor</th><th>Precio</th><th>Año</th></tr>`;
+        for (let i = 0; i < libros.length; i++) {
+            const titulo = libros[i].getElementsByTagName("title")[0].textContent;
+            const primerAutor = libros[i].getElementsByTagName("author")[0].textContent;
+            const precio = libros[i].getElementsByTagName("price")[0].textContent;
+            const año = libros[i].getElementsByTagName("year")[0].textContent;
+            resultadoHTML += `<tr>
+                            <td>${titulo}</td>
+                            <td>${primerAutor}</td>
+                            <td>${precio}</td>
+                            <td>${año}</td>
+                            </tr>`;
+        }
+        resultadoHTML += "</table>";
+
+        document.getElementById("resultado").innerHTML = resultadoHTML;
+    }
+
+    window.onload = cargarXML;
+</script>
+</body>
+</html>
