@@ -18,3 +18,8 @@ Ejercicio | Descripción
 Ejercicio | Descripción
 ----------|------------
 [JavaScript Class Exercises](/JavaScript_exercises/README.md) | Actividades de JavaScript.
+
+## Ejercicios de XML, XML+DOM, AJAX y JSON
+Ejercicio | Descripción
+----------|------------
+[XML+XML-DOM+Ajax+Json+RSS_exercises](/XML_Exercises/README.md) | Actividades múltiples estructuradas.
