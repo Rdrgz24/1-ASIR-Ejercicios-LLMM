@@ -5,7 +5,7 @@ Repositorio para donde están los ejercicios relacionados con el documento de go
 [Acceso a los ejercicios](XML_teoricas)
 
 ## Ejercicios de XML DOM
-Ejercicio | Descripción
+Ejercicio | Ubicación
 ----------|------------
 [Ejercicio 1](XML_DOM/README.md) | Está dentro del README de XML_DOM con capturas dentro de la consola de Google probando los comandos.
 [Ejercicio 2](XML_DOM/ej2/) | Carpeta con un HTML y un XML, dentro del HTML hay funciones creadas con el DOM que hace que se muestre por pantalla.
