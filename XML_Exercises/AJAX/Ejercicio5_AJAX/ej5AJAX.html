@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 5 AJAX - NASA</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    .seccion { margin-bottom: 12px; }
+    img { max-width: 100%; border: 1px solid #888; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+<h2>Ejercicio 5 AJAX - JSON de la NASA</h2>
+
+<div class="seccion"><strong>Explicación:</strong> <span id="explicacion"></span></div>
+<div class="seccion"><strong>Fecha:</strong> <span id="fecha"></span></div>
+<div class="seccion"><strong>URL de la imagen:</strong> <span id="url"></span></div>
+<div class="seccion">
+  <strong>Imagen de la NASA:</strong><br>
+  <img id="imagenNasa" src="" alt="Imagen de la NASA">
+</div>
+
+<script>
+// Función para cargar el JSON local
+function cargarJSON(ruta, cuandoListo) {
+  const peticion = new XMLHttpRequest();
+  peticion.onreadystatechange = function() {
+    if (peticion.readyState === 4 && peticion.status === 200) {
+      cuandoListo(JSON.parse(peticion.responseText));
+    }
+  };
+  peticion.open("GET", ruta, true);
+  peticion.send();
+}
+
+// Función para mostrar los datos en la página
+function mostrarDatosNasa(datos) {
+  document.getElementById("explicacion").textContent = datos.explanation;
+  document.getElementById("fecha").textContent = datos.date;
+  document.getElementById("url").textContent = datos.url;
+  document.getElementById("imagenNasa").src = datos.url;
+}
+
+// Inicialización
+function iniciar() {
+  cargarJSON("api_nasa.txt", mostrarDatosNasa);
+}
+
+iniciar();
+</script>
+
+</body>
+</html>
