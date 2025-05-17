@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 3 AJAX junto a JSON</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background: #fafafa;
+      margin: 30px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 300px;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #bbb;
+      padding: 6px 10px;
+      text-align: left;
+    }
+    th {
+      background: #f0f0f0;
+    }
+    h2 {
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Listado de Marcas con JSON</h2>
+<div><strong>Cantidad de marcas:</strong> <span id="total"></span></div>
+<table>
+  <thead>
+    <tr><th>Marca</th></tr>
+  </thead>
+  <tbody id="marcas"></tbody>
+</table>
+
+<script>
+function cargarJSON(url, callback) {
+  const req = new XMLHttpRequest();
+  req.onreadystatechange = function() {
+    if (req.readyState === 4 && req.status === 200) {
+      callback(JSON.parse(req.responseText));
+    }
+  };
+  req.open("GET", url, true);
+  req.send();
+}
+
+function ponerCantidad(arr) {
+  document.getElementById("total").textContent = arr.length;
+}
+
+function ponerTabla(arr) {
+  let filas = "";
+  for (let i = 0; i < arr.length; i++) {
+    filas += "<tr><td>" + arr[i] + "</td></tr>";
+  }
+  document.getElementById("marcas").innerHTML = filas;
+}
+
+function main() {
+  cargarJSON("json_demo_array.txt", function(datos) {
+    ponerCantidad(datos);
+    ponerTabla(datos);
+  });
+}
+
+main();
+</script>
+
+</body>
+</html>
