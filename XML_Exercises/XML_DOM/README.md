@@ -12,3 +12,8 @@ Solución  | XML Local
 ----------|------------
 [Solución ejercicio 2 DOM](ej2/ej2-DOM-XML.html) | Hay que descargar el archivo [catalogo.xml](ej2/catalogo.xml) para ejecutar el código en local.
 
+## 3. Escribe el código necesario para obtener los siguientes datos:
+Mostrar título del primer libro, todos los títulos, número de atributos del cuarto libro, valor de los atributos del cuarto libro, número de autores del tercer libro, autores del tercer libro y  una tabla que muestre el título de los libros, su primer autor, precio y año.
+Solución  | XML Local
+----------|------------
+[Solución ejercicio 3 DOM](ej3/ej3DOMXML.html) | Hay que descargar el archivo [catalogo.xml](ej3/libros.xml) para ejecutar el código en local.
