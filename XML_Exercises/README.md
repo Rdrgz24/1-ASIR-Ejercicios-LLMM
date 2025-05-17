@@ -22,6 +22,6 @@ Repositorio donde están las actividades de LLMM del documento de google llamado
 <entry no=24 date=27.10.2004></entry>
 ```
 ### 2. XML tree structures (Analyse the XML file below.)
-Abrir el archivo Ex2.xml y analizar la estructura de este.
+Abrir el archivo (/XML_Exercises/Ex2.xml) y analizar la estructura de este.
 ![image](https://github.com/user-attachments/assets/0f09e149-b75f-4da6-a7b9-8c6a74f665e8)
 
