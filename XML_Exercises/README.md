@@ -12,5 +12,4 @@ Ejercicio | Ubicación
 [Ejercicio 3](XML_DOM/ej3/) | Carpeta con un HTML y un XML, dentro del HTML hay funciones creadas con el DOM.
 
 ## Ejercicios de AJAX
-Ejercicio | Descripción
-----------|------------
+Acceder al [README](AJAX/README.md) de la sección de AJAX donde se encuentran todos los ejercicios.
