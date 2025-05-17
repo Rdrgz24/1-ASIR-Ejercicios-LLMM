@@ -1,6 +1,5 @@
 # Ejercicios de XML - Preguntas teóricas
 Repositorio donde están las actividades de LLMM del documento de google llamado "XML+XML-DOM+Ajax+Json+RSS_exercises" relacionadas con XML.
-
 ## 1. Simple questions:
 ### a. How should an element with the name test element and the content "This is our first element!" look?
 ```xml
@@ -112,4 +111,3 @@ Solución propuesta para ejercicio Ex5b.xml
 No. Un atributo no puede repetirse dentro del mismo elemento.
 ### c. Where is it stated that the element names in opening and closing tags must match?
 En la sección 3.1 del estándar XML, se establece que los nombres de las etiquetas de apertura y cierre deben coincidir exactamente (incluyendo mayúsculas y minúsculas).
-
