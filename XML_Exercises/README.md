@@ -4,4 +4,9 @@ Repositorio donde están las actividades de LLMM del documento de google llamado
 ## ACTIVIDADES
 ### 1. Simple questions:
 #### a. How should an element with the name test element and the content "This is our first element!" look?
+```xml
 <test_element>This is our first element!</test_element>
+
+#### b. Please show (in xml-syntax) the hierarchy of the element book with the subelements chapters and author. author has the further subelements name and address.
+
+
