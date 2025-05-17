@@ -106,7 +106,9 @@ Solución propuesta para ejercicio Ex5b.xml
 ```
 ### 7. The XML standard.
 #### a. What do comments look like in XML?
+```xml
 <!-- Esto es un comentario -->
+```
 #### b. Can an attribute be repeated in the same element
 No. Un atributo no puede repetirse dentro del mismo elemento.
 #### c. Where is it stated that the element names in opening and closing tags must match?
