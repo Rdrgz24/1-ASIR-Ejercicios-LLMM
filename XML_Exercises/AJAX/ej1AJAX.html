@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .divTabla {
+      display: table;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .divFila {
+      display: table-row;
+    }
+    .divCelda, .divCabecera {
+      display: table-cell;
+      border: 1px solid #999;
+      padding: 8px;
+      text-align: left;
+    }
+    .divEncabezado {
+      display: table-header-group;
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Catálogo de CDs</h2>
+<div id="catalogo" class="divTabla"></div>
+
+<script>
+function cargarXML() {
+  const solicitud = new XMLHttpRequest();
+  solicitud.onreadystatechange = function() {
+    if (this.readyState === 4 && this.status === 200) {
+      mostrarCatalogo(this);
+    }
+  };
+  solicitud.open("GET", "catalogo.xml", true);
+  solicitud.send();
+}
+
+function mostrarCatalogo(xml) {
+  const documento = xml.responseXML;
+  const cds = documento.getElementsByTagName("CD");
+
+  let html = `
+    <div class="divEncabezado">
+      <div class="divFila">
+        <div class="divCabecera">Título</div>
+        <div class="divCabecera">Artista</div>
+        <div class="divCabecera">País</div>
+        <div class="divCabecera">Compañía</div>
+        <div class="divCabecera">Precio</div>
+        <div class="divCabecera">Año</div>
+      </div>
+    </div>
+  `;
+
+  for (let i = 0; i < cds.length; i++) {
+    html += `
+      <div class="divFila">
+        <div class="divCelda">${cds[i].getElementsByTagName("TITLE")[0].textContent}</div>
+        <div class="divCelda">${cds[i].getElementsByTagName("ARTIST")[0].textContent}</div>
+        <div class="divCelda">${cds[i].getElementsByTagName("COUNTRY")[0].textContent}</div>
+        <div class="divCelda">${cds[i].getElementsByTagName("COMPANY")[0].textContent}</div>
+        <div class="divCelda">${cds[i].getElementsByTagName("PRICE")[0].textContent}</div>
+        <div class="divCelda">${cds[i].getElementsByTagName("YEAR")[0].textContent}</div>
+      </div>
+    `;
+  }
+
+  document.getElementById("catalogo").innerHTML = html;
+}
+
+cargarXML();
+</script>
+
+</body>
+</html>
