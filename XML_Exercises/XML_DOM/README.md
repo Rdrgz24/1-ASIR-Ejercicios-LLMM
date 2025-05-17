@@ -9,4 +9,4 @@ Soluciones propuestas en las capturas indicando los datos a obtener. (Ejercicios
 Muestre el título de los CD, el precio y la compañía, en este caso la solución se ha dado dentro de un HTML junto a botones relacionados con el código. 
 Solución  | XML Local
 ----------|------------
-[Solución ejercicio 2 DOM XML](ej2/ej2-DOM-XML.html) | Hay que descargar el archivo [catalogo.xml](ej2/catalogo.xml) para ejecutar el código en local.
+[Solución ejercicio 2 DOM](ej2/ej2-DOM-XML.html) | Hay que descargar el archivo [catalogo.xml](ej2/catalogo.xml) para ejecutar el código en local.
