@@ -24,6 +24,63 @@ Repositorio donde están las actividades de LLMM del documento de google llamado
 ### 2. XML tree structures (Analyse the XML file below.)
 Abrir el archivo [Ex2.xml](/XML_Exercises/Ex2.xml) y analizar la estructura de este.
 ![image](https://github.com/user-attachments/assets/0f09e149-b75f-4da6-a7b9-8c6a74f665e8)
+Vemos que indica el XML de una publicación, con sus item de noticias, el recurso que dentro aporta la agencia y el editor y la clase de articulo junto a la cabecera, texto y sumario.
 ### 3. XML structure (Analyse the following XML file. Correct errors in design.)
 Solucionado en el archivo [ex3-err.txt](/XML_Exercises/ex3-err.txt), donde se explican los errores del XML y se muestra este corregido.
-
+### 4. Mark up the following email message to identify its information content.
+En vez de crear un archivo xml se mostrará la solución aquí.
+```xml
+<email>
+  <from>
+    <name>Simon North</name>
+    <address>north@synopsys.com</address>
+  </from>
+  <to>
+    <name>Nick</name>
+    <address>sintac@xs4all.nl</address>
+  </to>
+  <subject>Hi</subject>
+  <body>
+    Hi Nick, this is just a quick message to say I got the material. Thanks.
+  </body>
+</email>
+```
+### 5. XML file, CD information.
+Solución propuesta para ejercicio Ex5a.xml
+```xml
+<CDList>
+  <CD>
+    <recordName>VANITY</recordName>
+    <artist>Bryant Barnes</artist>
+    <category>Pop</category>
+    <year>2024</year>
+    <tracks>
+      <track>
+        <number>1</number>
+        <title>Give Me A Sign</title>
+        <duration>2:40</duration>
+      </track>
+      <track>
+        <number>2</number>
+        <title>Want You All The Time</title>
+        <duration>2:22</duration>
+      </track>
+    </tracks>
+  </CD>
+</CDList>
+```
+Solución propuesta para ejercicio Ex5b.xml
+```xml
+<CDList>
+  <CD serial="X34B45" disc-length="18:29">
+    <recordName>VANITY</recordName>
+    <artist>Bryant Barnes</artist>
+    <category>Pop</category>
+    <year>2000</year>
+    <tracks>
+      <track number="1" duration="2:40">Give Me A Sign</track>
+      <track number="2" duration="2:22">Want You All The Time</track>
+    </tracks>
+  </CD>
+</CDList>
+```
