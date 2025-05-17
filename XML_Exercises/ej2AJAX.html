@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tiempo en Moguer</title>
+  <style>
+    .bloque {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Información Meteorológica</h2>
+<div id="resultado"></div>
+
+<script>
+function cargarTiempo() {
+  const solicitud = new XMLHttpRequest();
+  solicitud.onreadystatechange = function() {
+    if (this.readyState === 4 && this.status === 200) {
+      mostrarTiempo(this);
+    }
+  };
+  // Cargar archivo local
+  solicitud.open("GET", "tiempo_moguer.xml", true);
+  solicitud.send();
+}
+
+function mostrarTiempo(xml) {
+  const doc = xml.responseXML;
+
+  const municipio = doc.getElementsByTagName("nombre")[0].textContent;
+  const provincia = doc.getElementsByTagName("provincia")[0].textContent;
+
+  const prediccion = doc.getElementsByTagName("prediccion")[0];
+  const dia = prediccion.getElementsByTagName("dia")[0];
+
+  const tempMax = dia.getElementsByTagName("temperatura")[0].getElementsByTagName("maxima")[0].textContent;
+  const tempMin = dia.getElementsByTagName("temperatura")[0].getElementsByTagName("minima")[0].textContent;
+
+  const estados = dia.getElementsByTagName("estado_cielo");
+  const vientos = dia.getElementsByTagName("viento");
+  const humedades = dia.getElementsByTagName("humedad_relativa");
+
+  let html = `<div class="bloque"><strong>Municipio:</strong> ${municipio} (${provincia})<br>
+              <strong>Temperatura:</strong> Mínima ${tempMin}°C / Máxima ${tempMax}°C</div>`;
+
+  html += `<div class="bloque"><strong>Estado del cielo:</strong><br>`;
+  for (let i = 0; i < estados.length; i++) {
+    const periodo = estados[i].getAttribute("periodo") || "Todo el día";
+    const descripcion = estados[i].textContent || "Sin datos";
+    if (descripcion) {
+      html += `${periodo}: ${descripcion}<br>`;
+    }
+  }
+  html += `</div>`;
+
+  html += `<div class="bloque"><strong>Viento:</strong><br>`;
+  for (let i = 0; i < vientos.length; i++) {
+    const periodo = vientos[i].getAttribute("periodo") || "Todo el día";
+    const direccion = vientos[i].getElementsByTagName("direccion")[0]?.textContent || "-";
+    const velocidad = vientos[i].getElementsByTagName("velocidad")[0]?.textContent || "-";
+    html += `${periodo}: ${direccion} a ${velocidad} km/h<br>`;
+  }
+  html += `</div>`;
+
+  html += `<div class="bloque"><strong>Humedad relativa:</strong><br>`;
+  for (let i = 0; i < humedades.length; i++) {
+    const periodo = humedades[i].getAttribute("periodo") || "Todo el día";
+    const valor = humedades[i].textContent;
+    html += `${periodo}: ${valor}%<br>`;
+  }
+  html += `</div>`;
+
+  document.getElementById("resultado").innerHTML = html;
+}
+
+cargarTiempo();
+</script>
+
+</body>
+</html>
