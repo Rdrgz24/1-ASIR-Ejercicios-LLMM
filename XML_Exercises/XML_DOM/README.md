@@ -5,3 +5,5 @@ Soluciones propuestas en las capturas indicando los datos a obtener. (Ejercicios
 
 ![image](https://github.com/user-attachments/assets/185585fc-0e1a-4c19-800a-70f78a13b6e8)
 ![image](https://github.com/user-attachments/assets/473bce5c-bbf8-4bda-8c21-b74736a215f2)
+## 2. Ejercicio 2. Escribe el código necesario para obtener los siguientes datos:
+Muestre el título de los CD, el precio y la compañía, en este caso la solución se ha dado dentro de un HTML junto a botones relacionados con el código.
