@@ -84,3 +84,31 @@ Solución propuesta para ejercicio Ex5b.xml
   </CD>
 </CDList>
 ```
+
+### 6. XML: a letter template.
+```xml
+<letter>
+  <sender>
+    <name>Juan Pepito</name>
+    <address>Av. Siempre Viva 123, Manzote</address>
+  </sender>
+  <receiver>
+    <name>Manuel Gómez</name>
+    <address>Calle Falsa 42, Sevilla</address>
+  </receiver>
+  <date>2025-05-12</date>
+  <body>
+    Estimado Manuel:
+    Espero que estés bien. Solo quería saludarte y enviarte mis mejores deseos.
+  </body>
+  <signature>Juan</signature>
+</letter>
+```
+### 7. The XML standard.
+#### a. What do comments look like in XML?
+<!-- Esto es un comentario -->
+#### b. Can an attribute be repeated in the same element
+No. Un atributo no puede repetirse dentro del mismo elemento.
+#### c. Where is it stated that the element names in opening and closing tags must match?
+En la sección 3.1 del estándar XML, se establece que los nombres de las etiquetas de apertura y cierre deben coincidir exactamente (incluyendo mayúsculas y minúsculas).
+
