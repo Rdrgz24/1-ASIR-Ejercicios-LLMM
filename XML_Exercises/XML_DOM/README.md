@@ -7,5 +7,5 @@ Soluciones propuestas en las capturas indicando los datos a obtener. (Ejercicios
 ![image](https://github.com/user-attachments/assets/473bce5c-bbf8-4bda-8c21-b74736a215f2)
 ## 2. Ejercicio 2. Escribe el código necesario para obtener los siguientes datos:
 Muestre el título de los CD, el precio y la compañía, en este caso la solución se ha dado dentro de un HTML junto a botones relacionados con el código.
-[Solución ejercicio 2 DOM XML](XML_Exercises/XML_DOM/ej2/ej2-DOM-XML.html)
-Hay que descargar el archivo [catalogo.xml](XML_Exercises/XML_DOM/ej2/ej2-DOM-XML.html) para ejecutar el código en local.
+[Solución ejercicio 2 DOM XML](ej2/ej2-DOM-XML.html)
+Hay que descargar el archivo [catalogo.xml](ej2/ej2-DOM-XML.html) para ejecutar el código en local.
