@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 4 AJAX</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    table { border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #888; padding: 6px 12px; }
+    th { background: #f0f0f0; }
+    .seccion { margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+
+<h2>Ejercicio 4 - JSON</h2>
+
+<div class="seccion"><strong>Edad:</strong> <span id="edad"></span></div>
+<div class="seccion"><strong>Tipo de animal de la primera mascota:</strong> <span id="tipo"></span></div>
+<div class="seccion"><strong>Nombre de la primera mascota:</strong> <span id="nombreMascota"></span></div>
+<div class="seccion"><strong>Número de mascotas:</strong> <span id="numMascotas"></span></div>
+<div class="seccion"><strong>Nombres de todas las mascotas:</strong> <span id="nombresMascotas"></span></div>
+<div class="seccion"><strong>Todos los datos:</strong> <span id="todosDatos"></span></div>
+<div class="seccion"><strong>Datos en tabla:</strong><br>
+  <div id="tabla"></div>
+</div>
+
+<script>
+function cargarJSON(url, callback) {
+  const peticion = new XMLHttpRequest();
+  peticion.onreadystatechange = function() {
+    if (peticion.readyState === 4 && peticion.status === 200) {
+      callback(JSON.parse(peticion.responseText));
+    }
+  };
+  peticion.open("GET", url, true);
+  peticion.send();
+}
+
+function mostrarEdad(objeto) {
+  document.getElementById("edad").textContent = objeto.age;
+}
+
+function mostrarTipoPrimerMascota(objeto) {
+  document.getElementById("tipo").textContent = objeto.pets[0].animal;
+}
+
+function mostrarNombrePrimerMascota(objeto) {
+  document.getElementById("nombreMascota").textContent = objeto.pets[0].name;
+}
+
+function mostrarNumeroMascotas(objeto) {
+  document.getElementById("numMascotas").textContent = objeto.pets.length;
+}
+
+function mostrarNombresMascotas(objeto) {
+  let nombres = [];
+  for (let mascota of objeto.pets) {
+    nombres.push(mascota.name);
+  }
+  document.getElementById("nombresMascotas").textContent = nombres.join(", ");
+}
+
+function mostrarTodosDatos(objeto) {
+  let texto = "Nombre: " + objeto.name + ", Edad: " + objeto.age + ", Ciudad: " + objeto.city + ". Mascotas: ";
+  let mascotas = objeto.pets.map(m => m.name + " (" + m.animal + ")");
+  texto += mascotas.join("; ");
+  document.getElementById("todosDatos").textContent = texto;
+}
+
+function mostrarTabla(objeto) {
+  let html = "<table><thead><tr><th>Nombre</th><th>Animal</th></tr></thead><tbody>";
+  for (let mascota of objeto.pets) {
+    html += `<tr><td>${mascota.name}</td><td>${mascota.animal}</td></tr>`;
+  }
+  html += "</tbody></table>";
+  document.getElementById("tabla").innerHTML = html;
+}
+
+function iniciar() {
+  cargarJSON("json_demo.txt", function(datos) {
+    mostrarEdad(datos);
+    mostrarTipoPrimerMascota(datos);
+    mostrarNombrePrimerMascota(datos);
+    mostrarNumeroMascotas(datos);
+    mostrarNombresMascotas(datos);
+    mostrarTodosDatos(datos);
+    mostrarTabla(datos);
+  });
+}
+
+iniciar();
+</script>
+
+</body>
+</html>
