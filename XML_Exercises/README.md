@@ -2,7 +2,6 @@
 Repositorio para donde están los ejercicios relacionados con el documento de google "XML+XML-DOM+Ajax+Json+RSS_exercises".
 
 ## XML - ejercicios teóricos
-----------------------
 [Acceso a los ejercicios](XML_teoricas)
 
 ## Ejercicios de XML DOM
